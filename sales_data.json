@@ -1,0 +1,34 @@
+{
+  "last_updated": null,
+  "totals": {
+    "calls": 0,
+    "dm_reached": 0,
+    "conversations": 0,
+    "pitches": 0,
+    "appointments": 0,
+    "shows": 0,
+    "closed": 0
+  },
+  "by_website": {
+    "has_website": {
+      "calls": 0,
+      "dm_reached": 0,
+      "conversations": 0,
+      "pitches": 0,
+      "appointments": 0,
+      "shows": 0,
+      "closed": 0
+    },
+    "no_website": {
+      "calls": 0,
+      "dm_reached": 0,
+      "conversations": 0,
+      "pitches": 0,
+      "appointments": 0,
+      "shows": 0,
+      "closed": 0
+    }
+  },
+  "by_state": {},
+  "log": []
+}
