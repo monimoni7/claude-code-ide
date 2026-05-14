@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-orange-DEFAULT hover:bg-orange-dark text-white font-bold py-4 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 inline-flex items-center gap-2;
+  }
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-navy-DEFAULT font-bold py-4 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-white inline-flex items-center gap-2;
+  }
+  .btn-outline {
+    @apply border-2 border-orange-DEFAULT text-orange-DEFAULT hover:bg-orange-DEFAULT hover:text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 inline-flex items-center gap-2;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-navy-DEFAULT;
+  }
+  .section-subtitle {
+    @apply text-lg text-gray-600 max-w-2xl mx-auto;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden;
+  }
+  .trust-badge {
+    @apply flex items-center gap-2 text-sm font-semibold text-gray-700;
+  }
+  .service-card {
+    @apply bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-orange-DEFAULT group cursor-pointer;
+  }
+}
+
+/* Emergency pulse animation */
+@keyframes emergency-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.emergency-pulse {
+  animation: emergency-pulse 1.5s ease-in-out infinite;
+}
+
+/* Sticky call button */
+.sticky-call {
+  @apply fixed bottom-0 left-0 right-0 z-50 flex md:hidden;
+}
